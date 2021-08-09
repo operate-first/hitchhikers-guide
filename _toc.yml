@@ -1,0 +1,8 @@
+format: jb-book
+root: pages/index
+parts:
+  - caption: Tutorials
+    chapters:
+    - file: pages/jupyterhub
+      sections:
+      - file: pages/increase_pvc_size

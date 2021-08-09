@@ -1,20 +1,41 @@
-# Operate First template for repositories
+# Welcome to the hitchhiker's guide to Operate First!
+
+Hitchhiker's guide is intended to serve as a main resource for all Operate First community contributors. It contains documentation on how to perform contributor-related tasks and encourages input and contributions from the community. Jupyterbook format combines easy readability with quick way how to use newly acquired knowledge.
+
+## How to
+
+In the repository you can create virtual environment with [pipenv](https://pipenv.pypa.io/en/latest/)
+```
+pipenv install --skip-lock --dev
+```
+after that you can enter  created environment
+```
+pipenv shell
+```
+and build jupyter book
+```
+jupyter-book build .
+```
+Compiled book can be found in `_build` folder.
+
+---
+### Operate First template for repositories
 
 Derive new repositories from this template
 
 List of featurese:
 
-## License
+### License
 
 This template ensures new repos are created compliant with [ADR 0001](https://www.operate-first.cloud/blueprints/blueprint/docs/adr/0001-use-gpl3-as-license.md) and use GNU GPL v3 license.
 
-## AI-CoE CI Github application
+### AI-CoE CI Github application
 
 AI-CoE CI provides easy and quick integration for build pipelines and checks for pull requests.
 
 An empty [`.aicoe-ci.yaml`](.aicoe-ci.yaml) is created here, disabling all checks via this CI provider by default. Documentation can be found [here](https://github.com/AICoE/aicoe-ci/).
 
-## Prow CI
+### Prow CI
 
 Prow is a CI provider developed for Kubernetes needs. Provides chat-ops management of pull requests, issues and declarative management for labels, branches and many more.
 
@@ -22,7 +43,7 @@ We host our own deployment of Prow in Operate First available at [https://prow.o
 
 Supported commands are listed [here](https://prow.operate-first.cloud/command-help). We have also enabled Prow to consume on-repository configuration files. You can specify your config in [`.prow.yaml`](.prow.yaml). Additional centralized configuration can be found in the [thoth-application repository](https://github.com/thoth-station/thoth-application/tree/master/prow/overlays/cnv-prod).
 
-## Pre-commit
+###  Pre-commit
 
 By extension to Prow, we define a default pre-commit config for new repositories. Default hook configuration can be found in [`.pre-commit-config.yaml`](.pre-commit-config.yaml). Pre-commit is executed via Prow, see [`.prow.yaml`](.prow.yaml) for details.
 
