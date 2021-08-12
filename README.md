@@ -6,7 +6,7 @@ Hitchhiker's guide is intended to serve as a main resource for all Operate First
 
 In the repository you can create virtual environment with [pipenv](https://pipenv.pypa.io/en/latest/)
 ```
-pipenv install --skip-lock --dev
+pipenv install --dev
 ```
 after that you can enter  created environment
 ```
