@@ -1,12 +1,15 @@
 title: Hitchhiker's Guide to Operate First
-author: "Operate first"
+author: "Operate First"
 copyright: "2021"
 logo: img/icon.png
-execute:
-  execute-notebooks: "off"
 only_build_toc_files: true
+
+execute:
+  execute_notebooks: 'off'
+
 html:
   favicon: img/favicon.png
+  use_repository_button: true
+
 repository:
   url: https://github.com/operate-first/hitchhikers-guide
-  branch: main

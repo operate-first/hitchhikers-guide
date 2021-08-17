@@ -3,6 +3,10 @@ root: pages/index
 parts:
   - caption: Tutorials
     chapters:
+    - file: pages/operate_first_support
     - file: pages/jupyterhub
       sections:
       - file: pages/increase_pvc_size
+    - file: pages/operate_first_clusters
+      sections:
+      - file: pages/onboarding_cluster
