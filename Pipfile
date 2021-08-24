@@ -10,4 +10,4 @@ jupyter-book = "*"
 mdit-py-plugins = "<0.2.7"
 
 [requires]
-python_version = "3.9"
+python_version = "3.8"
