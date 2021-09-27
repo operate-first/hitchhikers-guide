@@ -10,3 +10,4 @@ parts:
     - file: pages/operate_first_clusters
       sections:
       - file: pages/onboarding_cluster
+      - file: pages/onboarding_new_cluster
