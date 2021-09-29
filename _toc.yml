@@ -7,7 +7,7 @@ parts:
     - file: pages/jupyterhub
       sections:
       - file: pages/increase_pvc_size
-    - file: pages/operate_first_clusters
+    - file: pages/getting_started
       sections:
-      - file: pages/onboarding_cluster
+      - file: pages/onboarding_project
       - file: pages/onboarding_new_cluster
