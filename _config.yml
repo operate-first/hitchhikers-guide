@@ -13,3 +13,10 @@ html:
 
 repository:
   url: https://github.com/operate-first/hitchhikers-guide
+  path_to_book: ""
+  branch: master
+
+launch_buttons:
+  notebook_interface: jupyterlab
+  binderhub_url: false
+  jupyterhub_url: https://jupyterhub-opf-jupyterhub.apps.smaug.na.operate-first.cloud
