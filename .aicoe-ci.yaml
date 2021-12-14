@@ -1,12 +1,24 @@
 check:
-  - thoth-build
+  - overlays-build
+overlays_dir: "."
+overlays:
+  - name: builder-image
+    build:
+      build-strategy: Containerfile
+      dockerfile-path: Containerfile
+      custom-tag: latest
+      registry: quay.io
+      registry-org: operate-first
+      registry-project: s2i-sre-notebook
+      registry-secret: operate-first-pusher-secret
 
-build:
-  build-stratergy: Source
-  build-source-script: "image:///opt/app-root/builder"
-  base-image: quay.io/operate-first/s2i-sre-notebook:latest
-  custom-tag: latest
-  registry: quay.io
-  registry-org: operate-first
-  registry-project: hitchhikers-guide
-  registry-secret: operate-first-pusher-secret
+  - name: hitchhikers-guide
+    build:
+      build-stratergy: Source
+      build-source-script: "image:///opt/app-root/builder"
+      base-image: quay.io/operate-first/s2i-sre-notebook:latest
+      custom-tag: latest
+      registry: quay.io
+      registry-org: operate-first
+      registry-project: hitchhikers-guide
+      registry-secret: operate-first-pusher-secret
