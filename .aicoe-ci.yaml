@@ -4,7 +4,7 @@ check:
 build:
   build-stratergy: Source
   build-source-script: "image:///opt/app-root/builder"
-  base-image: quay.io/operate-first/s2i-sre-notebook:latest
+  base-image: quay.io/operate-first/s2i-sre-notebook:vlatest
   custom-tag: latest
   registry: quay.io
   registry-org: operate-first
